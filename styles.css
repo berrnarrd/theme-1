@@ -1,0 +1,79 @@
+body {
+    font-family: 'Inter', sans-serif;
+    padding-top: 56px;
+    /* Height of the navbar */
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.section h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+    /* Prevent the text from wrapping */
+    padding: 0 10px;
+    /* Add padding to ensure the text is not cut off */
+    background: white;
+    /* Add a background color to ensure readability */
+}
+
+.section p {
+    margin-top: 2em;
+}
+
+.nav-link.active,
+.nav-link.dropdown-toggle.active {
+    font-weight: 500;
+    /* Highlight active link with font weight 500 */
+}
+
+h3 {
+    font-weight: 400;
+}
+
+form {
+    margin-top: 5em;
+}
+
+#move {
+    margin-top: 5em;
+}
+
+@media (max-width: 768px) {
+    .section {
+        height: auto;
+        /* Allow sections to adjust their height automatically */
+        padding: 2em 1em;
+        /* Add padding to the sections */
+    }
+
+    .section h2 {
+        position: relative;
+        /* Change positioning to ensure visibility */
+        transform: none;
+        /* Remove transform */
+        left: 0;
+        top: 0;
+        margin-bottom: 1em;
+        /* Add margin at the bottom */
+    }
+
+    .section p {
+        margin-top: 1em;
+    }
+}
+
+.text-left {
+    text-align: left !important;
+}
